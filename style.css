@@ -72,13 +72,16 @@ body{
 @media screen and (max-width: 800px){
     .boxes{
         display: grid;
-        grid-template-columns: repeat(1, fr);
-        grid-template-rows: repeat(1, fr);
-
-        /* display: none; */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        gap: 10px;
     }
 
-    .container{
-        /* align-items: center; */
+}
+
+@media screen and (max-width: 500px) {
+    .btn button{
+        font-size: 10px;
     }
 }
