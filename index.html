@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="heading">
+                <h1>Generate a <br>
+                <span>random password.</span></h2>
+            </div>
+
+            <div class="length">
+                <h4>Length: <span id="length">8</span></h4>
+                <input type="range" min="8" max="20" step="1" value="8" id="myRange">
+            </div>
+
+            <div class="btn">
+                <button onclick="generatePass()">Generate Passwords</button>
+            </div>
+
+            <div class="line">
+                <hr width="40%" color="#10b981">
+            </div>
+
+            <div class="boxes">
+                <div class="box">
+                    <p id="box-1">...</p>
+                </div>
+                <div class="box">
+                    <p id="box-2">...</p>
+                </div>
+                <div class="box">
+                    <p id="box-3">...</p>
+                </div>
+                <div class="box">
+                    <p id="box-4">...</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
